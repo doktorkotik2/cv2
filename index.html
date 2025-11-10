@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artem Hraudin — Ansioluettelo</title>
+  <style>
+    :root{--bg:#f7f7fb;--card:#ffffff;--ink:#111827;--muted:#6b7280;--accent:#2563eb;--chip:#eef2ff;--border:#e5e7eb;}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Times New Roman", Times, serif;}
+    .container{max-width:980px;margin:40px auto;padding:0 20px}
+    .header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+    .title h1{margin:0;font-size:34px;letter-spacing:.2px}
+    .subtitle{color:var(--muted);margin-top:4px}
+    .actions{display:flex;gap:12px}
+    .btn{appearance:none;border:1px solid var(--border);background:var(--card);padding:10px 14px;border-radius:12px;cursor:pointer}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px}
+    h2{font-size:22px;margin:0 0 10px}
+    h3{font-size:18px;margin:14px 0 6px}
+    .item{margin-bottom:10px}
+    .muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid #dbeafe;color:#1e40af;border-radius:999px;padding:6px 10px;font-size:14px}
+    .contact{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;align-items:center}
+    .contact a{color:var(--ink);text-decoration:none}
+    .contact a:hover{text-decoration:underline}
+    .lang{display:grid;gap:8px}
+    .bar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+    .bar>span{display:block;height:100%;background:var(--accent)}
+    footer{color:var(--muted);text-align:center;margin:28px 0}
+    .section-spacer{height:4px}
+    @media print{.actions{display:none}}
+  </style>
+  <script>function savePDF(){window.print();}</script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="title">
+        <h1>Artem Hraudin</h1>
+        <div class="subtitle">Ansioluettelo</div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="location.href='#yhteystiedot'">Yhteystiedot</button>
+        <button class="btn primary" onclick="savePDF()">Lataa PDF</button>
+      </div>
+    </header>
+    <section id="yhteystiedot" class="card">
+      <h2>Yhteystiedot</h2>
+      <div class="contact">
+        <div>📍</div><div>Vanha valtatie 56 B E41, 04170 Järvenpää</div>
+        <div>📞</div><div><a href="tel:+358417252987">041 725 2987</a></div>
+        <div>✉️</div><div><a href="mailto:artem.hraudin@gmail.com">artem.hraudin@gmail.com</a></div>
+        <div>🎂</div><div>Syntymäaika: 30.08.2001</div>
+      </div>
+    </section>
+    <div class="section-spacer"></div>
+    <main class="grid">
+      <section class="card">
+        <h2>Koulutus</h2>
+        <div class="item">
+          <h3>Peruskoulu (perustutkinto)</h3>
+          <div class="muted">Rubežnoen peruskoulu N:o 3, Ukraina — valmistunut 10.06.2016</div>
+        </div>
+        <div class="item">
+          <h3>Lukio / Kadettikoulu</h3>
+          <div class="muted">Luganskin alueellinen lukiokadettikoulu (Kadettilaitos – Herojen Molodoi Gvardii) — valmistunut 23.06.2018</div>
+        </div>
+        <div class="item">
+          <h3>Ammattikoulu / Diploma of Qualified Worker</h3>
+          <div class="muted">Luganskin kansallisen yliopiston alainen ”Alueellinen ammatillinen keskus” — valmistunut 26.02.2021</div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Taido(t) ja kortit</h2>
+        <div class="chips">
+          <span class="chip">Työturvallisuuskortti</span>
+          <span class="chip">Erinomainen fyysinen kunto</span>
+          <span class="chip">Tarkka työote</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Asiakaspalvelu</span>
+          <span class="chip">Varastotyö</span>
+          <span class="chip">Tiimityö</span>
+        </div>
+        <h3 style="margin-top:16px">Kielitaito</h3>
+        <div class="lang">
+          <div>Venäjä – äidinkieli<div class="bar"><span style="width:100%"></span></div></div>
+          <div>Suomi – A2–B1<div class="bar"><span style="width:55%"></span></div></div>
+          <div>Englanti – hyvä<div class="bar"><span style="width:75%"></span></div></div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Työkokemus</h2>
+        <div class="item">
+          <h3>Tietokoneiden huolto ja korjaus <span class="muted">— Ukraina, 2020–2022</span></h3>
+          <div class="muted">Tietokoneiden diagnosointi, ohjelmistojen asennus, osien vaihto ja järjestelmien optimointi.</div>
+        </div>
+        <div class="item">
+          <h3>Työharjoittelu – Ruoka-apuverkosto <span class="muted">— Järvenpää, 2024</span></h3>
+          <div class="muted">Lajittelu, pakkaaminen, varastotyöt ja asiakaspalvelu.</div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Harrastukset & Luonne</h2>
+        <p>Kuntosali, koripallo, ohjelmointi, luonnossa liikkuminen, lukeminen.</p>
+        <p>Vastuullinen, työteliäs ja tarkka. Motivoitunut oppimaan uutta ja kehittämään itseäni. Varma tietotekniikan käyttäjä, kiinnostunut teknologiasta ja verkkokehityksestä.</p>
+      </section>
+    </main>
+    <footer>Päivitetty: 11.11.2025 — © Artem Hraudin</footer>
+  </div>
+</body>
+</html>
